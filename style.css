@@ -1,0 +1,134 @@
+/* ====== GLOBAL STYLE ====== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #0f4c4c;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+    background: #11bfae;
+    padding: 18px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    transition: 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #eaffff;
+}
+
+/* ====== HOME ====== */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-frame {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #11bfae;
+    overflow: hidden;
+    animation: pop 1.2s ease;
+}
+
+.profile-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.logo-title {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #11bfae;
+    background: white;
+    padding: 5px;
+    animation: fadeIn 1.5s ease;
+}
+
+/* ====== PROJECT SECTION ====== */
+.project-card {
+    background: #e3fffb;
+    border-left: 8px solid #11bfae;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 750px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease;
+    animation: slideUp 1s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 3px solid #11bfae;
+}
+
+/* ====== KONTAK ====== */
+#kontak p {
+    font-size: 18px;
+    color: #0a3b3b;
+}
+
+/* ====== ANIMASI (MAKSIMAL 3) ====== */
+@keyframes pop {
+    0% { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+    0% { transform: translateY(25px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+}
